@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="contairner">
+	<header class="principal">
+		<h4>&nbsp;&nbsp;&nbsp;Developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+		<h1 class="title">HOUSE DESIGNS</h1>
+		<nav class="menu">
+			<ul>
+				<li><%= link_to "Home", root_path %></li>
+				<li><%= link_to "About", about_path %></li>
+				<li><%= link_to "Contact", contact_path %></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="info">
+		<%= yield %>
+	</section>
+</div>
+</body>
+</html>
